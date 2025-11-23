@@ -10,7 +10,7 @@ Watch a full workflow demonstration here:<br>
 ## Features
 
 - **Pinterest Automation:** Log in, navigate to a shared Idea board, find and download the top pin’s image.
-- **Image Processing:** Renames image and (randomly, with variety) sends it and a caption to Gemini API for generative captioning to prevent spam/blocking.
+- **Image Processing:** Renames the image and sends it with a (randomly, with variety) caption to the Gemini API for generative captioning to prevent spam/blocking.
 - **Instagram Automation:** Log in, create a post, upload the image with the generated or prewritten caption, then log out.
 - **Secure Credential Handling:** Reads credentials from `credentials.json`.
 - **Full orchestration** via `run.sh` for one-touch operation.
@@ -23,11 +23,11 @@ Watch a full workflow demonstration here:<br>
     - Log in using credentials from `credentials.json`.
     - Access the shared Idea board.
     - Retrieve and download the topmost pin image.
-    - Log out and rename the image to its URL (or another convention).
+    - Log out and rename the image to its URL.
 4. **Gemini API:** Sends the image to Gemini and chooses a caption (from 10 options, randomly) only if the returned random number matches, to avoid spam.
 5. **Instagram Actions:**
     - Log in using credentials from `credentials.json`.
-    - Create a post, upload the processed image, set caption.
+    - Create a post, upload the processed image, and sets the generated caption.
     - Log out and close Firefox.
 6. **Caption Handling:** Maintains 10 prewritten captions (to prevent repetitive Gemini requests and blocking).
 7. **Error Handling:** Logs errors and provides troubleshooting hints.
@@ -75,7 +75,7 @@ bash run.sh
 
 This script configures the environment, launches the browser, and starts the full image transfer and posting workflow.
 
-### Advanced
+### Advanced/ Further Work.
 
 - **Configure Captions:** Edit your 10 captions in the appropriate script/config file.
 - **Gemini API:** Ensure your API key and usage limits are set correctly and monitor for blocking.
