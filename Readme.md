@@ -1,6 +1,6 @@
-# IPBOT
+# InstaPinFlow
 
-IPBOT automates a multi-step content workflow involving Pinterest and Instagram. It uses browser automation, credential handling, and generative AI to download, caption, and share images between platforms.
+InstaPinFlow automates a multi-step content workflow involving Pinterest and Instagram. It uses browser automation, credential handling, and generative AI to download, caption, and share images between platforms.
 
 ## Demo
 
